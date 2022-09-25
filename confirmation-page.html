@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style css link -->
+    <link rel="stylesheet" href="/style/style.css">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="/style/responsive.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Font Awesome cdn -->
+    <script src="https://use.fontawesome.com/2195943dbd.js"></script>
+    <title>Confirmation</title>
+</head>
+<body id="body">
+    
+    <!-- header section -->
+    
+        <div class="header d-flex py-4 px-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="header_logo" class="float-left col-xl-3 col-md-6 col-lg-2 col-6">
+                        <img src="/img/logo.webp" alt="">
+                    </div>
+                    <div id="navbar-bar" class="col-6 col-md-6 text-right float-right">
+                        <div class="navbaricon float-left text-right ml-3 pl-3 col-md-9">
+                            <i class="header_i fa fa-search py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                            <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                            <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                        </div>
+                        <i class="fa fa-bars text-danger p-1 m-1"></i>
+                    </div>
+                    
+                    <div id="navbar-list" class=" navbar-list col-12 text-capitalize">
+                        <ul id="list-1" class="m-2 p-1" style="list-style: none;">
+                            <li class="m-1 p-1"><a href="index.html">home</a></li>
+                            <li class="m-1 p-1">Shop</li>
+                            <li class="m-1 p-1">about</li>
+                            <li class="m-1 p-1">latest
+                                <i id="plus-icon" class="fa fa-plus float-right"></i>
+                            </li>
+                            <li class="m-1 p-1">blog
+                                <i id="plus-icon" class="fa fa-plus float-right"></i>
+                            </li>
+                            <li class="m-1 p-1">pages
+                                <i id="plus-icon" class="fa fa-plus float-right"></i>
+                            </li>
+                            <li class="m-1 p-1">contact</li>
+                        </ul>
+                    </div>
+                    <div id="header_navmenu" class="float-left col-6 col-lg-8 col-xl-6 text-center">
+                        <a href="../index.html" class="header_a py-1 px-3">Home</a>
+                        <a href="shop-page.html" class="header_a py-1 px-3">Shop</a>
+                        <a href="about-page.html" class="header_a py-1 px-3">About</a>
+                        <div id="latest" class="d-inline">
+                            <a href="#"  class="header_a py-1 px-3">Latest</a>
+                            <div id="latest_dropdown" class="latest_dropdown m-1 p-1">
+                                <a href="shop-page.html"><h4 id="productlist">Product List</h4></a>            <!--dropdown menu for latest (a tag in header section) -->
+                                <a href="product-detail-page.html"><h4 id="productdetails">Product Details</h4></a>
+                            </div>
+                        </div>
+                        <div id="blog" class="d-inline">
+                            <a href="#" class="header_a py-1 px-3">Blog</a>
+                            <div id="blog_dropdown" class="blog_dropdown m-1 p-1">
+                                <a href="#"><h4 id="blogs">Blogs</h4></a>                     <!--dropdown menu for blog (a tag in header section) -->
+                                <a href="#"><h4 id="blogdetails">Blog Details</h4></a>
+                            </div>
+                        </div>
+                        <div id="pages" class="d-inline">
+                            <a href="#"class="header_a py-1 px-3">Pages</a>
+                            <div id="page_dropdown" class="page_dropdown m-1 p-1">
+                                <a href="login-page.html"><h4 id="login">Login</h4></a>      <!--dropdown menu for pages (a tag in header section) -->
+                                <a href="cart-page.html"><h4 id="cart">Cart</h4></a>
+                                <a href="/pages/element-page.html"><h4 id="element">Element</h4></a>
+                                <a href="/pages/confirmation-page.html"><h4 id="confirmation">Confirmation</h4></a>
+                                <a href="/pages/product-checkout-page.html"><h4 id="productcheckout">Product Checkout</h4></a>
+                            </div>
+                        </div>
+                        <a href="#" class="header_a py-1 px-3">Contact</a>
+                    </div>
+                    <div id="header_navicon" class="float-right col-xl-3 col-12 col-md-4 col-lg-2 m-2 m-lg-0 text-right">
+                        <a class="header_i fa fa-search py-xl-1 px-xl-3 p-1"></a>
+                        <a href="/pages/login-page.html" class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></a>
+                        <a class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+    <!-- header section ends  -->
+    <!-- scroll button  -->
+    
+    <button id="scrollbtn" title="Go to top" class="fa fa-arrow-up btn btn-primary"></button>
+    
+    <!-- scroll button line ends -->
+    <!-- banner section starts -->
+    
+    <div class="banner_cart">
+            <h1 id="bannercart_list">Confirmation</h1>
+    </div>
+    <!-- banner section ends -->
+    
+<div class="order-confirmation">
+    <h4>Thank you. Your order has been received.</h4>
+    <div class="order float-left">
+        <div class=" order-info">
+            <h4>Order Info</h4>
+            <ul>
+                <li>
+                    <p>Order Number</p>
+                    <span>: 60235</span>
+                </li>
+                <li>
+                    <p>Date</p>
+                    <span>: Oct 03, 2017</span>
+                </li>
+                <li>
+                    <p>Total</p>
+                    <span>: USD 2210</span>
+                </li>
+                <li>
+                    <p>Payment Method</p>
+                    <span>: Check Payment</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="shipping-address">
+            <h4>Shipping Address</h4>
+            <ul>
+                <li>
+                    <p>Street</p>
+                    <span>: 56/8</span>
+                </li>
+                <li>
+                    <p>City</p>
+                    <span>: Los Angeles</span>
+                </li>
+                <li>
+                    <p>Country</p>
+                    <span>: United States</span>
+                </li>
+                <li>
+                    <p>Passcode</p>
+                    <span>: 36952</span>
+                </li>
+            </ul>
+        </div>
+    </div>    
+    <div class="billing-address float-right">
+        <h4>Billing Address</h4>
+        <ul>
+            <li>
+                <p>Street</p>
+                <span>: 56/8</span>
+            </li>
+            <li>
+                <p>City</p>
+                <span>: Los Angeles</span>
+            </li>
+            <li>
+                <p>Country</p>
+                <span>: United States</span>
+            </li>
+            <li>
+                <p>Passcode</p>
+                <span>: 36952</span>
+            </li>
+        </ul>
+    </div>
+    <div class="confirmation-table">
+        <table id="confirmation-table">
+            <h4>Order Details</h4>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <tr>
+                <td>Pixelstore Fresh Blackberry</td>
+                <td>X02</td>
+                <td>$720.00</td>
+            </tr>
+            <tr>
+                <td>Pixelstore Fresh Blackberry</td>
+                <td>X02</td>
+                <td>$720.00</td>
+            </tr>
+            <tr>
+                <td>Pixelstore Fresh Blackberry</td>
+                <td>X02</td>
+                <td>$720.00</td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td></td>
+                <td>$2160.00</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Flat Rate: </td>
+                <td>$50.00</td>
+            </tr>
+            <tfoot>
+                <th>Quantity</th>
+                <th></th>
+                <th>Total</th>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+</body>
+<!-- link to script file -->
+<script src="/script/script.js"></script>
+</html>

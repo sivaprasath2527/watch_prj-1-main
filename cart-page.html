@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style css link -->
+    <link rel="stylesheet" href="../style/style.css">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="../style/responsive.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Font Awesome cdn -->
+    <script src="https://use.fontawesome.com/2195943dbd.js"></script>
+    <title>Cart page</title>
+</head>
+<body id="body">
+    
+<!-- header section -->
+
+    <div class="header d-flex py-4 px-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header_logo" class="float-left col-xl-3 col-md-6 col-lg-2 col-6">
+                    <img src="/img/logo.webp" alt="">
+                </div>
+                <div id="navbar-bar" class="col-6 col-md-6 text-right float-right">
+                    <div class="navbaricon float-left text-right ml-3 pl-3 col-md-9">
+                        <i class="header_i fa fa-search py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                        <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                        <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                    </div>
+                    <i class="fa fa-bars text-danger p-1 m-1"></i>
+                </div>
+                
+                <div id="navbar-list" class=" navbar-list col-12 text-capitalize">
+                    <ul id="list-1" class="m-2 p-1" style="list-style: none;">
+                        <li class="m-1 p-1"><a href="index.html">home</a></li>
+                        <li class="m-1 p-1">Shop</li>
+                        <li class="m-1 p-1">about</li>
+                        <li class="m-1 p-1">latest
+                            <i id="plus-icon" class="fa fa-plus float-right"></i>
+                        </li>
+                        <li class="m-1 p-1">blog
+                            <i id="plus-icon" class="fa fa-plus float-right"></i>
+                        </li>
+                        <li class="m-1 p-1">pages
+                            <i id="plus-icon" class="fa fa-plus float-right"></i>
+                        </li>
+                        <li class="m-1 p-1">contact</li>
+                    </ul>
+                </div>
+                <div id="header_navmenu" class="float-left col-6 col-lg-8 col-xl-6 text-center">
+                    <a href="../index.html" class="header_a py-1 px-3">Home</a>
+                    <a href="shop-page.html" class="header_a py-1 px-3">Shop</a>
+                    <a href="about-page.html" class="header_a py-1 px-3">About</a>
+                    <div id="latest" class="d-inline">
+                        <a href="#"  class="header_a py-1 px-3">Latest</a>
+                        <div id="latest_dropdown" class="latest_dropdown m-1 p-1">
+                            <a href="p"><h4 id="productlist">Product List</h4></a>            <!--dropdown menu for latest (a tag in header section) -->
+                            <a href="product-detail-page.html"><h4 id="productdetails">Product Details</h4></a>
+                        </div>
+                    </div>
+                    <div id="blog" class="d-inline">
+                        <a href="#" class="header_a py-1 px-3">Blog</a>
+                        <div id="blog_dropdown" class="blog_dropdown m-1 p-1">
+                            <a href="#"><h4 id="blogs">Blogs</h4></a>                     <!--dropdown menu for blog (a tag in header section) -->
+                            <a href="#"><h4 id="blogdetails">Blog Details</h4></a>
+                        </div>
+                    </div>
+                    <div id="pages" class="d-inline">
+                        <a href="#"class="header_a py-1 px-3">Pages</a>
+                        <div id="page_dropdown" class="page_dropdown m-1 p-1">
+                            <a href="login-page.html"><h4 id="login">Login</h4></a>      <!--dropdown menu for pages (a tag in header section) -->
+                            <a href="cart-page.html"><h4 id="cart">Cart</h4></a>
+                            <a href="element-page.html"><h4 id="element">Element</h4></a>
+                            <a href="confirmation-page.html"><h4 id="confirmation">Confirmation</h4></a>
+                            <a href="product-checkout-page.html"><h4 id="productcheckout">Product Checkout</h4></a>
+                        </div>
+                    </div>
+                    <a href="#" class="header_a py-1 px-3">Contact</a>
+                </div>
+                <div id="header_navicon" class="float-right col-xl-3 col-12 col-md-4 col-lg-2 m-2 m-lg-0 text-right">
+                    <a class="header_i fa fa-search py-xl-1 px-xl-3 p-1"></a>
+                    <a href="/pages/login-page.html" class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></a>
+                    <a class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"  style="color: red;" ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<!-- header section ends  -->
+<!-- scroll button  -->
+
+<button id="scrollbtn" title="Go to top" class="fa fa-arrow-up btn btn-primary"></button>
+
+<!-- scroll button line ends -->
+<!-- banner section starts -->
+
+<div class="banner_cart">
+        <h1 id="bannercart_list">Cart List</h1>
+</div>
+<!-- banner section ends -->
+<!-- cart list section starts -->
+<div class="cart_list">
+    <div class="container">
+        <!-- tabe for cart items -->
+        <table class="item_list">
+            <tr>
+                <th>
+                    Product
+                </th>
+                <th>
+                    Prize
+                </th>
+                <th>
+                    Qantity
+                </th>
+                <th>
+                    Total
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="list_img">
+                        <img class="product_img" src="/img/popular6.png" alt="watch">
+                    </div>
+                    <div class="list_text">
+                        <h6>Minimalistic shop for multipurpose use</h6>
+                    </div>
+                </td>
+                <td>
+                    <h5 id="prize">$360.00</h5>
+                </td>
+                <td>
+                    <div>
+                        <input type="number" value="1" name="quantity" id="quantity" >
+                    </div>
+                </td>
+                <td class="total_quantity">
+                    
+                </td>
+            </tr>
+        </table>
+        <!-- tabe for cart items ends-->
+        <div class="buttons-sec">
+            <div class="button-1 col-xl-6 float-left">
+                <button class="btn btn-primary">Update Cart</button>
+            </div>
+            <div class="button-2 col-xl-6 float-right">
+                <button class="btn btn-primary">Close Coupon</button>
+            </div>
+        </div>
+        <!-- table for total and sub total sec -->
+        <table class="total-list">
+            <tr>
+                <th>
+                    sub-total
+                </th>
+                <td>
+                    <h5 class="float-right">$2160.00</h5>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    shipping
+                </th>
+                <td>
+                    <ul>
+                        <div class="col-xl-10 float-left">
+                            <li>Flat Rate: $5.00</li>
+                            <li>Shipping prizee </li>
+                            <li>Flat Rate: $10.00</li>
+                            <li>Local delivery</li>
+                        </div>
+                        <div class="col-xl-2 float-right">
+                            <input type="radio" name="flat-rate" ><br>
+                            <input type="radio" name="Shipping prizee"><br>
+                            <input type="radio" name="flat-rate" ><br>
+                            <input type="radio" name="Local delivery"><br>
+                        </div>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>
+
+                </th>
+                <td class="float-right">
+                    <select name="states" id="states">
+                        <option value="tamilnadu">Tamil Nadu</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="goa">Goa</option>
+                    </select>
+                    <br>
+                    <input type="text" placeholder="Pincode/Zipcode" id="pincode">
+                    <br>
+                    <button class="btn btn-primary">Update Details</button>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <button class="btn btn-primary">Update Cart</button>
+                </th>
+                <td>
+                    <button class="btn btn-primary">Close Coupon</button>
+                </td>
+            </tr>
+        </table>
+        <!-- table for total and sub total sec ends -->
+    </div>
+</div>
+<!-- cart list section ends  -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-top col-xl-12">
+            <div class="footer-sec1 col-xl-3 float-left">
+                <img src="/img/logo.webp" class="mb-2 pb-2" alt="logo">
+                <br>
+                <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.</p>
+            </div>
+            <div class="footer-sec2 col-xl-3 float-left">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">About</a></li>
+                    <li><a href="#" class="quick-link">Offers & Discounts</a></li>
+                    <li><a href="#" class="quick-link">Get Coupon</a></li>
+                    <li><a href="#" class="quick-link">Contact Us</a></li>
+                </ul>            
+            </div>
+            <div class="footer-sec3 col-xl-3 float-right">
+                <h4>New Product</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">Woman Cloth</a></li>
+                    <li><a href="#" class="quick-link">Fashion Accessories</a></li>
+                    <li><a href="#" class="quick-link">Man Accessories</a></li>
+                    <li><a href="#" class="quick-link">Rubber made Toys</a></li>
+                </ul>
+            </div>
+            <div class="footer-sec4 col-xl-3 float-right">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">Frequently Asked Questions</a></li>
+                    <li><a href="#" class="quick-link">Tearms & Conditions</a></li>
+                    <li><a href="#" class="quick-link">Privacy Policy</a></li>
+                    <li><a href="#" class="quick-link">Report a payment issue</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="float-left">
+                <p>
+                    Copyright ©2021 All rights reserved | This template is made with 
+                    <i class="fa fa-heart text-danger"></i>by <a href="index.html" class="text-danger font-weight-lighter">Colorlib</a>
+                </p>
+            </div>
+            <div class="float-right">
+                <i class="fa fa-facebook-square text-dark mx-2"></i>
+                <i class="fa fa-instagram text-dark mx-2"></i>
+                <i class="fa fa-twitter-square text-dark mx-2"></i>
+                <i class="fa fa-whatsapp text-dark mx-2"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer ends -->
+</body>
+<script src="../script/script.js"></script>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style css link -->
+    <link rel="stylesheet" href="/style/style.css">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="/style/responsive.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Font Awesome cdn -->
+    <script src="https://use.fontawesome.com/2195943dbd.js"></script>
+
+    <title>Product Checkout</title>
+
+</head>
+<body id="body">
+
+    <!-- header section -->
+
+    <div class="header d-flex py-4 px-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header_logo" class="float-left col-xl-3 col-md-6 col-lg-2 col-6">
+                    <a href="/index.html">
+                        <img src="/img/logo.webp" alt="timezone logo">
+                    </a>
+                </div>
+                <div id="navbar-bar" class="col-6 col-md-6 text-right float-right">
+                    <div class="navbaricon float-left text-right ml-3 pl-3 col-md-9">
+                        <i class="header_i fa fa-search py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                        <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                        <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                    </div>
+                    <i class="fa fa-bars text-danger p-1 m-1"></i>
+                </div>
+                
+                <div id="navbar-list" class=" navbar-list col-12 text-capitalize">
+                    <ul id="list-1" class="m-2 p-1" style="list-style: none;">
+                        <li class="m-1 p-1">home</li>
+                        <li class="m-1 p-1">Shop</li>
+                        <li class="m-1 p-1">about</li>
+                        <li class="m-1 p-1">latest
+                            <i id="plus-icon" class="fa fa-plus float-right"></i>
+                        </li>
+                        <li class="m-1 p-1">blog
+                            <i id="plus-icon" class="fa fa-plus float-right"></i>
+                        </li>
+                        <li class="m-1 p-1">pages
+                            <i id="plus-icon" class="fa fa-plus float-right"></i>
+                        </li>
+                        <li class="m-1 p-1">contact</li>
+                    </ul>
+                </div>
+                <div id="header_navmenu" class="float-left col-6 col-lg-8 col-xl-6 text-center">
+                    <a href="#" class="header_a py-1 px-3">Home</a>
+                    <a href="/pages/shop-page.html" class="header_a py-1 px-3">Shop</a>
+                    <a href="/pages/about-page.html" class="header_a py-1 px-3">About</a>
+                    <div id="latest" class="d-inline">
+                        <a href="#"  class="header_a py-1 px-3">Latest</a>
+                        <div id="latest_dropdown" class="latest_dropdown m-1 p-1">
+                            <a href="/pages/shop-page.html" id="productlist">Product List</a>                                     <!--dropdown menu for latest (a tag in header section) -->
+                            <a href="/pages/product-detail-page.html" id="productdetails">Product Details</a>
+                        </div>
+                    </div>
+                    <div id="blog" class="d-inline">
+                        <a href="#" class="header_a py-1 px-3">Blog</a>
+                        <div id="blog_dropdown" class="blog_dropdown m-1 p-1">
+                            <h4 id="blogs">Blogs</h4>                                             <!--dropdown menu for blog (a tag in header section) -->
+                            <h4 id="blogdetails">Blog Details</h4>
+                        </div>
+                    </div>
+                    <div id="pages" class="d-inline">
+                        <a href="#"class="header_a py-1 px-3">Pages</a>
+                        <div id="page_dropdown" class="page_dropdown m-1 p-1">
+                            <div class="flex-div">
+                                <a id="login-page"href="/pages/login-page.html">Login</a></a>                                             <!--dropdown menu for pages (a tag in header section) -->
+                                <a id="cart-page"href="/pages/cart-page.html">Cart</a></a>
+                                <a href="/pages/element-page.html" id="element">Element</a>
+                                <a id="confirmation" href="/pages/confirmation-page.html">Confirmation</a>
+                                <a id="productcheckout" href="/pages/product-checkout-page.html">Product Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="header_a py-1 px-3">Contact</a>
+                </div>
+                <div id="header_navicon" class="float-right col-xl-3 col-12 col-md-4 col-lg-2 m-2 m-lg-0 text-right">
+                    <a id="search" class="header_i fa fa-search py-xl-1 px-xl-3 p-1"></a>
+                    <a href="/pages/login-page.html" class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></a>
+                    <a href="/pages/cart-page.html" class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- header section ends  -->
+<!-- scroll button  -->
+
+<button id="scrollbtn" title="Go to top" class="fa fa-arrow-up btn btn-primary"></button>
+
+<!-- scroll button line ends -->
+<!-- banner section starts -->
+
+<div class="banner_cart">
+        <h1 id="bannercart_list">Check Out</h1>
+</div>
+<!-- banner section ends -->
+
+<!-- login section -->
+<div class="productCheckout-section">
+    <div class="login-section">
+
+        <div class="return-div">
+            <h4>Returning customer?</h4>
+            <a href="#">Click here to login</a>
+        </div>
+        <p>
+            If you have shopped with us before, please enter your details in the boxes below.
+            If you are a new customer, please proceed to the Billing & Shipping section.
+        </p>
+        <table class="returnDiv-table">
+            <input type="text" placeholder="Username or Email*">
+            <input type="password" placeholder="password*"> <br>
+            <button class="btn btn-outline-primary btn-lg m-1">Login</button>
+            <input type="checkbox" name="rememberme" id="">
+            <label for="rememberme">Remember Me</label> <br>
+            <a href="#" id="lost-password">Lost yout password?</a>
+        </table>
+        <div class="coupon-div">
+            <h4>Having a coupon?</h4>
+            <a href="#">Click here to enter coupon</a>
+        </div>
+        
+    </div>
+    
+    <div class="billingAndOrder-div">
+        <div class="billingAndShipping-section">
+            <h4 class="headings-billings">Billing Details</h4>
+            <table class="billingAndShipping-table">
+                <div id="billingAndShipping-table">
+
+                    <div class="pair-input-table">
+                        <input type="text" placeholder="First Name" class="ml-0 float-left" id="firstName-table">
+                        <input type="text" placeholder="Last Name" class="mr-0 float-right" id="lastName-table">
+                    </div>
+                    
+                    <input type="text" placeholder="Company Name">
+
+                    <div class="pair-input-table">
+                        <input type="number" placeholder="Phone Number" class="ml-0 float-left" id="phoneNumber-table">
+                        <input type="email" placeholder="Email Address" class="mr-0 float-right" id="email-table">
+                    </div>
+                    
+                    <input type="text" placeholder="country">
+                    <input type="text" placeholder="Address">
+                    <input type="text" placeholder="Town/City">
+                    <input type="text" placeholder="Distric">
+                    <input type="text" placeholder="Postcode/zip">
+                    <div class="checkbox">
+                        <input type="checkbox" name="createAccount" id="">
+                        <label for="createAccount">Create an Account?</label>
+                    </div>
+
+                </div>
+               
+                <h4 class="headings-billings">Shipping Details</h4>
+                
+                <div class="checkbox">
+                    <input type="checkbox" name="differentAddress" id="">
+                    <label for="differentAddress">ship to different address</label>
+                </div>
+                <textarea name="" id="billingAndShipping-textarea" cols="30" rows="10" placeholder="Order notes"></textarea>
+            </table>
+    
+        </div>
+        
+        <div class="yourOrder-section">
+            <table class="yourOrder-table">
+                <thead>
+                    <h3 class="blueColor">Your Order</h3>
+                </thead>
+                <tr>
+                    <td>Product</td>
+                    <td></td>
+                    <td class="text-right w-50">Total</td>
+                </tr>
+                <tr>
+                    <td class="firstCol-orderTable">Fresh Blackberry</td>
+                    <td class="blueColor text-center">x02</td>
+                    <td>$720.00</td>
+                </tr>
+                <tr>
+                    <td class="firstCol-orderTable">Fresh Tomatoes </td>
+                    <td class="blueColor text-center">x02</td>
+                    <td>$720.00</td>
+                </tr>
+                <tr>
+                    <td class="firstCol-orderTable">Fresh Brocoli </td>
+                    <td class="blueColor text-center">x02</td>
+                    <td>$720.00</td>
+                </tr>
+                <tr>
+                    <td class="blueColor firstCol-orderTable">SUBTOTAL</td>
+                    <td class="midCol-orderTable"></td>
+                    <td class="lastCol-orderTable">$2160.00</td>
+                </tr>
+                <tr>
+                    <td class="blueColor firstCol-orderTable">SHIPPING</td>
+                    <td class="midCol-orderTable"></td>
+                    <td class="lastCol-orderTable">Flat Rate: $50.00</td>
+                </tr>
+                <tr>
+                    <td>TOTOAL</td>
+                    <td class="blueColor firstCol-orderTable">$2210.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="checkPayment" id="">
+                        <label class="blueColor" for="checkPayment">CHECK PAYMENTS</label>
+                        <div>
+                            <p>
+                                Please send a check to Store Name, Store Street, Store Town,
+                                Store State / County, Store Postcode.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="paypal" id="">
+                        <label class="blueColor" for="paypal">PAYPAL</label>
+                        <div>
+                            <p>
+                                Please send a check to Store Name, Store Street,
+                                Store Town, Store State / County, Store Postcode.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="termsConditions" id="">
+                        <label class="blueColor" for="termsConditions">I've read and accept the <span>terms & conditions*</span></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="submit" id="yourOrderTable-submit" value="PROCEED TO PAYPAL">
+                    </td>
+                </tr>
+             
+            </table>
+        </div>
+    </div>
+    
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-top col-xl-12">
+            <div class="footer-sec1 col-xl-3 float-left">
+                <img src="/img/logo.webp" class="mb-2 pb-2" alt="logo">
+                <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.</p>
+            </div>
+            <div class="footer-sec2 col-xl-3 float-left">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">About</a></li>
+                    <li><a href="#" class="quick-link">Offers & Discounts</a></li>
+                    <li><a href="#" class="quick-link">Get Coupon</a></li>
+                    <li><a href="#" class="quick-link">Contact Us</a></li>
+                </ul>            
+            </div>
+            <div class="footer-sec3 col-xl-3 float-right">
+                <h4>New Product</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">Woman Cloth</a></li>
+                    <li><a href="#" class="quick-link">Fashion Accessories</a></li>
+                    <li><a href="#" class="quick-link">Man Accessories</a></li>
+                    <li><a href="#" class="quick-link">Rubber made Toys</a></li>
+                </ul>
+            </div>
+            <div class="footer-sec4 col-xl-3 float-right">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">Frequently Asked Questions</a></li>
+                    <li><a href="#" class="quick-link">Tearms & Conditions</a></li>
+                    <li><a href="#" class="quick-link">Privacy Policy</a></li>
+                    <li><a href="#" class="quick-link">Report a payment issue</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="float-left">
+                <p>
+                    Copyright ©2021 All rights reserved | This template is made with 
+                    <i class="fa fa-heart text-danger"></i>by <a href="index.html" class="text-danger font-weight-lighter">Colorlib</a>
+                </p>
+            </div>
+            <div class="float-right">
+                <i class="fa fa-facebook-square text-dark mx-2"></i>
+                <i class="fa fa-instagram text-dark mx-2"></i>
+                <i class="fa fa-twitter-square text-dark mx-2"></i>
+                <i class="fa fa-whatsapp text-dark mx-2"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer ends -->
+
+
+
+
+
+</body>
+<!-- script file -->
+<script src="/script/script.js"></script>
+</html>
